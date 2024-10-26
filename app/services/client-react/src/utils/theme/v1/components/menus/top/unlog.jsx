@@ -3,7 +3,6 @@ import "./unlog.css";
 import { Button, Paper } from "@mui/material";
 
 import { LogoBanner, Logo404 } from "../../logos";
-import { useParams } from "react-router-dom";
 
 export default () => {
   const { pathname } = window.location;

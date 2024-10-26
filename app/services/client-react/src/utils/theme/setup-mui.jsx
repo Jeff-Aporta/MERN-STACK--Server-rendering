@@ -1,7 +1,7 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
 const themename = localStorage.getItem("theme") ?? "dark";
-const isThemeDark = themename == "dark";
+const isThemeDark = themename === "dark";
 
 let palette = (() => {
   const white = {
