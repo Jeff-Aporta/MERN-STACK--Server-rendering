@@ -2,7 +2,14 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <div style={{ padding: "20px", borderBottom: "1px solid rgba(128, 128, 128, 0.5)" }}>
+      <div
+        style={{
+          padding: "20px",
+          borderBottom: "1px solid rgba(128, 128, 128, 0.5)",
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
         <Button
           variant="contained"
           color="atentionBlue"
@@ -11,6 +18,21 @@ function App() {
         >
           Salir de API-DB-DOC
         </Button>
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+          }}
+        >
+          <img
+            src="api-db/public/src/img/logo512-nobg.png"
+            width={50}
+            height={50}
+          />
+          <span style={{ display: "inline-flex", alignItems: "center" }}>
+            API-DB REST-FULL JSON
+          </span>
+        </div>
       </div>
       <br />
       <Paper className="container" elevation={0}>
