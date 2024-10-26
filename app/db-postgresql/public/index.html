@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Información de API</title>
     <script src="https://jeff-aporta.github.io/ASCIIMapLoader/index.js"></script>
-    <script src="public/src/js/ascii-map.js"></script>
+    <script src="/api-db/public/src/js/ascii-map.js"></script>
 
     <script>
       runASCIIMapLoader_inLine(`
         ${ASCII_MAP.WEB_REACT}
-        ${ASCII_MAP.ALLWAYS}
+        
 
-        📄 public/index.jsx
-        🎨 public/index.css
+        ➤📁 /api-db/public
+        │
+        ├──➤📁 src
+        │  │
+        │  ├──📁 jsx
+        │  │   │
+        │  ╧   └──📄 initMUI.jsx
+        │
+        ├──🎨 index.css
+        └──📄 index.jsx
       `);
     </script>
   </head>

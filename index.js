@@ -2,7 +2,7 @@ const express = require("express");
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
 const app = express();
-const PORT = process.env.PORT || 5000; // Puerto en el que correrá el proxy inverso
+const PORT = process.env.PORT || 3000; // Puerto en el que correrá el proxy inverso
 
 const PORT_CLIENT = 3001;
 const PORT_SERVER_DB = process.env.PORT_SERVER_DB;

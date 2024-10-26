@@ -11,11 +11,4 @@ const ASCII_MAP = {
         ├──🔗 react-dom@18.3.1/umd/react-dom.production.min.js
         └──🔗 @mui/material@5.16.7/umd/material-ui.production.min.js
     `,
-  ALLWAYS: `
-        ➤📁 public/src
-        │
-        ├──📁 jsx
-        │   │
-        ╧   └──📄 initMUI.jsx
-    `,
 };
