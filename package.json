@@ -5,9 +5,10 @@
   "scripts": {
     "install-all": "npm install && concurrently \"npm install --prefix ./app/services/client-react\" \"npm install --prefix ./app/services/db-postgresql\" \"npm i\"",
     "start": "concurrently \"node --env-file ./app/services/db-postgresql/.env index\" \"npm run start-db\" \"npm run start-client\"",
-    "dev": "concurrently \"node --env-file ./app/services/db-postgresql/.env --watch index\" \"npm run start-db\" \"npm run start-client\"",
+    "dev": "concurrently \"node --env-file ./app/services/db-postgresql/.env --watch index\" \"npm run start-db-dev\" \"npm run start-client\"",
     "start-client": "npm start --prefix ./app/services/client-react",
-    "start-db": "node --env-file ./app/services/db-postgresql/.env --watch ./app/services/db-postgresql/index"
+    "start-db": "node --env-file ./app/services/db-postgresql/.env ./app/services/db-postgresql/index",
+    "start-db-dev": "node --env-file ./app/services/db-postgresql/.env --watch ./app/services/db-postgresql/index"
   },
   "keywords": [],
   "author": "",
