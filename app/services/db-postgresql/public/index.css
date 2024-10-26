@@ -8,10 +8,8 @@
   margin: 10px;
   padding: 15px;
 
-  .sepv {
-    color: skyblue;
-    font-weight: lighter;
-    margin: 0 20px;
+  .tachar{
+    text-decoration: line-through;
   }
   .enfasis-1 {
     color: royalblue;
