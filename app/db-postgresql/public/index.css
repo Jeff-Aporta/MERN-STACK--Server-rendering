@@ -1,0 +1,14 @@
+.app {
+  hr {
+    opacity: 0.2;
+  }
+  .secondary{
+    color: royalblue;
+    opacity: 0.5;
+  }
+}
+
+.container {
+  margin: 10px;
+  padding: 15px;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "mern_stack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && concurrently \"npm install --prefix ./app/client-react\" \"npm install --prefix ./app/db-postgresql\" \"npm i\"",
+    "start": "concurrently \"node --env-file ./app/db-postgresql/.env index\" \"npm run start-db\" \"npm run start-client\"",
+    "dev": "concurrently \"node --env-file ./app/db-postgresql/.env --watch index\" \"npm run start-db\" \"npm run start-client\"",
+    "start-client": "npm start --prefix ./app/client-react",
+    "start-db": "node --env-file ./app/db-postgresql/.env --watch ./app/db-postgresql/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "http-proxy-middleware": "^3.0.3"
+  }
+}

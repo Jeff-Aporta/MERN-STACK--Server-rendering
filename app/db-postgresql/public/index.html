@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Información de API</title>
+    <script src="https://jeff-aporta.github.io/ASCIIMapLoader/index.js"></script>
+    <script src="public/src/js/ascii-map.js"></script>
+
+    <script>
+      runASCIIMapLoader_inLine(`
+        ${ASCII_MAP.WEB_REACT}
+        ${ASCII_MAP.ALLWAYS}
+
+        📄 public/index.jsx
+        🎨 public/index.css
+      `);
+    </script>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: gray;
+      }
+    </style>
+    Cargando...
+  </body>
+</html>
