@@ -30,19 +30,23 @@ function App() {
             <Typography variant="h4">
               Rutas de la API con interfaz gráfica
             </Typography>
+            <br />
             <Typography>
               Esta es la única ruta en la API del servidor que tiene interfaz
               gráfica. Permite a los usuarios interactuar con el sistema de
               manera visual.
             </Typography>
+            <br />
             <Typography>
               A continuación, se detallan las rutas disponibles y su
               funcionalidad:
             </Typography>
+            <br />
             <Paper className="explain container" elevation={4}>
               <Typography variant="h4">
                 <small className="enfasis-1">GET:</small> /api-db/public/*
               </Typography>
+              <br />
               <Typography>
                 Se obtienen los recursos públicos del servidor. Estos recursos
                 pueden incluir imágenes, estilos CSS, scripts JavaScript, y
@@ -70,23 +74,30 @@ function App() {
               base de datos, operaciones de lectura/escritura, entre otras.
             </Typography>
             <br />
-            <Typography>
-              Esquema de uso: <br />
-              <br />
-              <code className="tachar">
-                <span className="enfasis-1">GET:</span>{" "}
-                {"api-db/{'comando': 'ejecutar', 'parametros': {...}}"}
-              </code>
-              <br />
-              <br />
-              Debe pasarse con caracteres de escape de URL, así:
-              <br />
-              <br />
-              <code>
-                <span className="enfasis-1">GET:</span>{" "}
-                {escape("api-db/{'comando': 'ejecutar', 'parametros': {...}}")}
-              </code>
-            </Typography>
+            <Paper className="container" elevation={4}>
+              <Typography>
+                <big>
+                  <strong>Esquema de uso:</strong>
+                </big>{" "}
+                <br />
+                <br />
+                <code className="tachar">
+                  <span className="enfasis-1">GET:</span>{" "}
+                  {"api-db/{'comando': 'ejecutar', 'parametros': {...}}"}
+                </code>
+                <br />
+                <br />
+                Debe pasarse con caracteres de escape de URL, así:
+                <br />
+                <br />
+                <code>
+                  <span className="enfasis-1">GET:</span>{" "}
+                  {escape(
+                    "api-db/{'comando': 'ejecutar', 'parametros': {...}}"
+                  )}
+                </code>
+              </Typography>
+            </Paper>
             <br />
             <Typography>
               Es importante asegurarse de que los comandos sean seguros y no
