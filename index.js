@@ -11,7 +11,7 @@ const PORT_CLIENT = 3001;
 const PORT_SERVER_DB = process.env.PORT_SERVER_DB;
 
 if (!PORT_SERVER_DB) {
-  console.error("Error: PORT_SERVER no está establecido.");
+  console.error("Error: PORT_SERVER_DB no está establecido.");
   process.exit(1);
 }
 
