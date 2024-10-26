@@ -2,7 +2,16 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <br />
+      <div style={{ padding: "20px", borderBottom: "1px solid rgba(128, 128, 128, 0.5)" }}>
+        <Button
+          variant="contained"
+          color="atentionBlue"
+          href="/"
+          startIcon={<i className="fa fa-home" />}
+        >
+          Salir de API-DB-DOC
+        </Button>
+      </div>
       <br />
       <Paper className="container" elevation={0}>
         <Typography variant="h2">
