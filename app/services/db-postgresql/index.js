@@ -32,10 +32,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/public/*", (req, res) => {
-  console.log(`Route found: ${req.originalUrl}`);
   const filePath = join(__dirname, ...req.originalUrl.split("/"));
   res.sendFile(filePath);
-  // res.send(filePath);
 });
 
 app.listen(PORT_SERVER_DB, () => {

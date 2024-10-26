@@ -5,12 +5,15 @@ function App() {
       <br />
       <br />
       <Paper className="container" elevation={0}>
-        <Typography variant="h2">API-DB | DOCUMENTACIÓN</Typography>
+        <Typography variant="h2">
+          API-DB
+          <span className="secondary"> | DOCUMENTACIÓN</span>
+        </Typography>
         <hr />
         <br />
         <Paper className="app container">
           <Typography variant="h3">
-            <small>GET:</small> api-db/
+            <small className="enfasis-1">GET:</small> api-db/
           </Typography>
           <Typography variant="h5" className="secondary">
             (GUI DOC)
@@ -22,7 +25,7 @@ function App() {
             <br />
             <Paper className="explain container" elevation={4}>
               <Typography variant="h4">
-                <small>GET:</small> api-db/public/*
+                <small className="enfasis-1">GET:</small> api-db/public/*
               </Typography>
               <br />
               Se obtienen los recursos publicos del servidor.
@@ -32,7 +35,7 @@ function App() {
           <hr />
           <br />
           <Typography variant="h3">
-            <small>GET:</small> api-db/:json-cmd-exec
+            <small className="enfasis-1">GET:</small> api-db/:json-cmd-exec
           </Typography>
           <Typography variant="h5" className="secondary">
             (Comandos para ejecución)
