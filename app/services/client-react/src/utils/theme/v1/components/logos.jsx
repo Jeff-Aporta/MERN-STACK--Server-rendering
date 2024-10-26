@@ -37,7 +37,7 @@ function LOAD_IMG_SZS(params) {
   console.log("Loading image from URL:", imageUrl);
 
   const img = (
-    <img src={`${PUBLIC_URL}/${imageUrl}`} width={`${width}px`} {...p} />
+    <img src={`${PUBLIC_URL}/${imageUrl}`} width={`${width}px`} {...p} alt="" />
   );
   if (href) {
     return <a href={href}>{img}</a>;

@@ -1,8 +1,11 @@
 const express = require("express");
+const cors = require('cors');
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
 const app = express();
 const PORT = process.env.PORT || 3000; // Puerto en el que correrá el proxy inverso
+
+app.use(cors());
 
 const PORT_CLIENT = 3001;
 const PORT_SERVER_DB = process.env.PORT_SERVER_DB;
